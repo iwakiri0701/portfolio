@@ -157,9 +157,6 @@ header {
 @media screen and (max-width: 767px) {
     .about_logo {
         left: 38%;
-    }
-
-    .about_logo {
         top: -50px;
     }
 
