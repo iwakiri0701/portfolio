@@ -1,0 +1,414 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+p,
+dl,
+dt,
+dd,
+ul,
+li,
+h4,
+footer {
+    font-family: "fot-cezanne-pron", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #a4a88d;
+}
+
+a,
+h1,
+h2,
+h3,
+footer {
+    font-family: "garamond-premier-pro-caption", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffffeb;
+    background-image: url(../images/haikei@2x.png);
+    margin: 0;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ここから */
+
+/* ローディング */
+
+/* Loading背景画面設定　*/
+
+#loading {
+    /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: #ffffeb;
+    text-align: center;
+    color: #fff;
+}
+
+/* Loading画像中央配置　*/
+#loading_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Loading アイコンの大きさ設定　*/
+#loading_logo img {
+    width: 100px;
+}
+
+@keyframes loading_iconAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 秒針 */
+#hari {
+    animation: rotation-s 2s linear infinite;
+
+    position: absolute;
+    right: calc(50%); /* 位置調整 線幅の半分ずらす */
+    top: calc(50% - -38px); /* 位置調整 線幅の半分ずらす */
+    transform-origin: 100% top;
+    width: 60px;
+}
+
+@keyframes rotation-s {
+    0% {
+        transform: rotate(90deg);
+    } /* 初期位置 0秒の位置 */
+    100% {
+        transform: rotate(90deg);
+    } /* 初期位置 + 360deg で一周 */
+
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+/* ここからメニューバー */
+.header_wrap {
+    max-width: 20%;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+
+.header_logo {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.header_logo img {
+    width: 116px;
+}
+
+nav {
+    position: fixed;
+    top: 115px;
+    left: 0;
+}
+
+.pc_nav {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 100px;
+}
+
+.header_logo img {
+    width: 116px;
+}
+
+.pc_nav li {
+    font-size: 12px;
+    padding-bottom: 60px;
+}
+
+.pc_nav li img {
+    width: 20px;
+}
+
+.header_sp {
+    display: none;
+}
+
+.sp_nav,
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .pc_nav,
+    .header_wrap {
+        display: none;
+    }
+
+    .sd_appear {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .header_logo img {
+        display: none;
+    }
+
+    /* */
+
+    /* ヘッダー */
+    .header_sp {
+        display: inline;
+        background-color: #ffffeb;
+        background-image: url(../images/haikei@2x.png);
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+    .header_sp_inner {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+        position: relative;
+    }
+
+    .header_title {
+        width: 80px;
+    }
+
+    .header_title {
+        width: 120px;
+    }
+
+    .header_title img {
+        display: block;
+        width: 100px;
+        height: 100%;
+    }
+    /* ハンバーガー */
+    .sp_btn {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .sp_btn span {
+        display: block;
+        position: relative;
+        top: 10px;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #a4a88d;
+        transition: 0.3s;
+    }
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 33px;
+        height: 3px;
+        border-radius: 2px;
+        background: #a4a88d;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    /* ハンバーガーメニュー 閉じる */
+    .sp_btn.open span {
+        background: transparent;
+    }
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+    /* ハンバーガーメニュー*/
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffeb;
+        background-image: url(../images/haikei@2x.png);
+        z-index: -1;
+    }
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+        padding: 0;
+    }
+    .sp_nav ul li {
+        padding: 20px 0;
+        color: #a4a88d;
+        font-size: 18px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+            "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    }
+
+    .sp_nav img {
+        color: #a4a88d;
+        width: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sp_nav ul {
+        margin-top: 50%;
+    }
+
+    .hp_desc p {
+        padding-left: 0;
+        margin: 10px;
+    }
+
+    .br-pc {
+        display: none;
+    }
+}
+
+/* fade */
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s, transform 3s;
+}
+.fade.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* 五線譜 */
+.score {
+    position: relative;
+    top: 125px;
+    z-index: -1;
+}
+
+.score span {
+    display: block;
+    height: 1px;
+    background-color: #a4a88d;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .score {
+        top: -50px;
+    }
+}
+/* footer */
+
+.footer_content {
+    background-image: url(../images/footer_bg@2x-100.jpg);
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: #e8e6d7;
+}
+
+.footer_img {
+    padding: 20px 0 10px 0;
+}
+
+.footer_content img {
+    width: 3%;
+}
+
+.footer_text p {
+    font-size: 12px;
+    line-height: 1.68;
+}
+
+.page_top {
+    position: fixed;
+    bottom: 200px;
+    right: 80px;
+}
+
+.page_top img {
+    width: 70px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer_content img {
+        width: 5%;
+    }
+
+    .page_top {
+        width: 30px;
+        bottom: 165px;
+        right: 5%;
+    }
+}

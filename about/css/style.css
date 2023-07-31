@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+.aboutme_logo {
+    position: absolute;
+    top: -50px;
+    left: 20%;
+    width: 125px;
+}
+
+.about_logo img {
+    width: 30%;
+}
+
+.aboutme_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    right: 0;
+    position: relative;
+    display: flex;
+    padding: 0 10px;
+}
+
+.name {
+    font-family: "zen-old-mincho", sans-serif;
+}
+
+.name_1 {
+    font-family: "garamond-premier-pro-caption", serif;
+}
+
+.aboutme_desc {
+    padding-top: 200px;
+}
+
+.aboutme_desc img {
+    width: 420px;
+}
+
+.aboutme_text_wrap {
+    padding-left: 5%;
+}
+
+h4 {
+    padding-bottom: 15px;
+    padding-left: 25px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.aboutme_desc p {
+    line-height: 1.76;
+    margin: 0;
+}
+
+.aboutme_text {
+    padding-top: 200px;
+    padding-left: 60px;
+}
+
+.aboutme_text p {
+    line-height: 1.76;
+}
+
+.aboutme_desc2 {
+    display: flex;
+}
+
+.aboutme_desc2 p {
+    text-align: left;
+    padding-left: 25px;
+    font-size: 17px;
+}
+
+.aboutme_desc2 img {
+    width: 20px;
+}
+
+.aboutme_desc2 + .aboutme_desc2 {
+    margin-top: 50px;
+}
+
+.skill_text {
+    margin-top: 113px;
+    padding-left: 0;
+}
+
+.scroll {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.scroll img {
+    width: 1.5%;
+}
+
+.br-sp {
+    display: none;
+}
+
+.sp_scroll {
+    display: none;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .score {
+        top: 130px;
+    }
+
+    .aboutme_wrap {
+        display: block;
+    }
+
+    .aboutme_desc img {
+        width: 100vh;
+    }
+
+    .aboutme_desc2 img {
+        width: 10px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .br-sp {
+        display: initial;
+    }
+
+    .scroll {
+        display: none;
+    }
+
+    .sp_scroll {
+        display: initial;
+        padding-left: 90%;
+    }
+
+    .sp_scroll img {
+        width: 10px;
+    }
+
+    .aboutme_desc {
+        margin: 10px;
+    }
+
+    .aboutme_text {
+        padding: 0;
+        margin: 50px;
+        font-size: 15px;
+    }
+    .aboutme_desc2 p {
+        font-size: 12px;
+    }
+    .skill_text {
+        margin-top: 120px;
+    }
+}
+
+/* desc */
+.aboutme_hp_desc {
+    margin: 100px auto;
+    justify-content: center;
+    padding: 150px 50px;
+    display: flex;
+    background-image: url(../images/about_bg@2x.png);
+}
+
+.aboutme_hp_desc img {
+    width: 116px;
+}
+
+.aboutme_hp_desc_text {
+    padding-left: 50px;
+}
+
+.aboutme_hp_desc_text p {
+    padding: 10px 0;
+    line-height: 1.68;
+}
+
+@media screen and (max-width: 767px) {
+    .aboutme_hp_desc {
+        display: block;
+        text-align: center;
+    }
+
+    .aboutme_hp_desc_text {
+        padding: 0 20px;
+        text-align: left;
+    }
+}
+
+.aboutme_photo {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+    padding: 100px 10px 200px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_photo {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-top: 200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.about_photo_wrap a {
+    display: block;
+    color: #a4a88d;
+    width: 100%;
+    height: 100%;
+}
+
+.about_photo_wrap {
+    width: 280px;
+    height: 188px;
+    overflow: hidden;
+    margin: 10px 8px 10px 16px;
+    position: relative; /* 相対位置指定 */
+}
+
+.about_photo_wrap .caption {
+    font-size: 40%;
+    padding-top: 16%;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.about_photo_wrap .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* 絶対位置指定 */
+    top: 0;
+    left: 0;
+    opacity: 0; /* マスクを表示しない */
+    background-color: rgb(95, 95, 82, 0.95); /* マスクは半透明 */
+
+    transition: all 0.2s ease;
+}
+.about_photo_wrap:hover .mask {
+    opacity: 1; /* マスクを表示する */
+}
+
+@media screen and (max-width: 767px) {
+    .aboutme_photo {
+        justify-content: center;
+    }
+}

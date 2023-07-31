@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+.contact2_logo {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 140px;
+}
+
+.form_wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 180px;
+    text-align: center;
+    position: relative;
+}
+
+.contact_text {
+    line-height: 1.78;
+    font-size: 14px;
+    text-align: left;
+    display: inline-block;
+}
+
+.contact_text2 {
+    line-height: 1.78;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding-right: 10%;
+    font-size: 14px;
+}
+
+.contact_img {
+    width: 10px;
+    vertical-align: baseline;
+}
+
+.form_text {
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 5px;
+    padding-left: 23%;
+}
+
+input {
+    width: 50%;
+    border: none;
+    padding: 20px;
+    margin: 5px 5px 30px 5px;
+}
+
+input {
+    background: #d1d6b3;
+}
+
+.input.inquiry {
+    line-height: 1.5;
+    height: 6em;
+}
+
+.form_text img {
+    width: 10px;
+    padding-bottom: 10px;
+}
+
+textarea {
+    width: 50%;
+    border: none;
+    padding: 20px;
+    margin: 5px 5px 30px 5px;
+    background: #d1d6b3;
+}
+
+.contact_btn {
+    color: #c4a672;
+    border: 1px solid #c4a672;
+    padding: 10px 40px;
+    background-color: #fffff5;
+    border-radius: 5px;
+    margin-top: 100px;
+    transition: 0.3s;
+}
+
+.contact_btn:hover {
+    color: #fffff5;
+    background: #c4a672;
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .contact_text2 {
+        padding-right: 3%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .score {
+            top: 120px;
+        }
+
+        .form_wrap {
+            padding-bottom: 150px;
+        }
+
+        .form_wrap p {
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        input {
+            width: 70%;
+        }
+        label {
+            padding-left: 10%;
+        }
+
+        textarea {
+            width: 70%;
+        }
+    }
+}

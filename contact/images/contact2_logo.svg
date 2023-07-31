@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.63 54.56">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #bea072;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #c4a672;
+      }
+
+      .cls-3 {
+        fill: #a4a88d;
+        font-family: GaramondPremrPro-MedCapt, 'Garamond Premier Pro';
+        font-size: 30px;
+      }
+
+      .cls-2 {
+        font-family: GaramondPremrPro-SmbdItSubh, 'Garamond Premier Pro';
+        font-size: 27px;
+        font-style: italic;
+      }
+    </style>
+  </defs>
+  <g id="PC文字">
+    <text class="cls-3" transform="translate(0 43.11)"><tspan x="0" y="0" xml:space="preserve">C   NTACT</tspan></text>
+    <text class="cls-2" transform="translate(23.68 43.52)"><tspan x="0" y="0">o</tspan></text>
+    <line class="cls-1" x1="33.11" y1=".5" x2="33.11" y2="36.5"/>
+  </g>
+</svg>
