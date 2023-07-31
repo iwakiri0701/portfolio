@@ -183,6 +183,12 @@ header {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .about_logo {
+        top: -45px;
+    }
+}
+
 /* skill */
 .skill_logo {
     position: absolute;
