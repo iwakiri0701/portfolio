@@ -192,6 +192,7 @@ h3 {
 
 h3 {
     margin: 10px 0;
+    font-size: 16px;
 }
 
 h3 span {
@@ -277,6 +278,10 @@ h3 span {
     }
 
     .banner_design img {
+        width: 250px;
+    }
+
+    .website_design img {
         width: 250px;
     }
 
