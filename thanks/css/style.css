@@ -3,7 +3,7 @@
 /* contact */
 .contact3_logo {
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%);
     width: 142px;
@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 767px) {
     .thanks_text {
-        padding: 120px 10px;
+        padding: 180px 10px;
     }
 
     .thanks_text p {
@@ -64,5 +64,9 @@
 
     .thanks_text img {
         width: 400px;
+    }
+
+    .score {
+        top: 80px;
     }
 }

@@ -120,7 +120,7 @@ header {
 }
 
 .about_text {
-    padding: 10% 9% 9% 9%;
+    padding: 10% 5% 9% 5%;
 }
 
 .about_text p {
@@ -160,7 +160,7 @@ header {
     }
 
     .about_logo {
-        top: -45px;
+        top: -50px;
     }
 
     .about_wrap {
@@ -173,7 +173,7 @@ header {
 
     .about_text {
         text-align: center;
-        padding: 15%;
+        padding: 8%;
     }
 
     .about_text p {
