@@ -31,8 +31,8 @@
 })(document);
 
 
-// ローディング
-//logoの表示
+// ローディング/
+// logoの表示
 $(window).on('load',function(){
   $("#loading").delay(1000).fadeOut('slow');//ローディング画面を1秒（1000ms）待機してからフェードアウト
   $("#loading_logo").delay(1000).fadeOut('slow');//ロゴを1秒（1000ms）待機してからフェードアウト
@@ -62,6 +62,46 @@ jQuery(function() {
       return false;
   });
 });
+
+$(function () {
+  var webStorage = function () {
+    if (sessionStorage.getItem('access')) {
+      /*
+        2回目以降アクセス時の処理
+      */
+      $("#loading").addClass('is-active');
+    } else {
+      /*
+        初回アクセス時の処理
+      */
+      sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
+      $("#loading-animation").addClass('is-active'); // loadingアニメーションを表示
+      setTimeout(function () {
+        // ローディングを数秒後に非表示にする
+        $("#loading").addClass('is-active');
+        $("#loading-animation").removeClass('is-active');
+      }, 3000); // ローディングを表示する時間
+    }
+  }
+  webStorage();
+});
+
+jQuery(function () {
+  var webStorage = function () {
+    if (sessionStorage.getItem('access')) {
+      //2回目以降アクセス時の処理
+      console.log('2回目以降のアクセスです');
+      
+    } else {
+      //初回アクセス時の処理
+      sessionStorage.setItem('access', 0);
+      console.log('初回アクセスです');
+    }
+  }
+  webStorage();
+});
+
+
 
 
 

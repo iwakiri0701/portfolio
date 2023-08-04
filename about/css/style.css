@@ -106,6 +106,10 @@ h3 {
     font-size: 30px;
 }
 
+.sp_text {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .score {
         top: 130px;
@@ -142,6 +146,12 @@ h3 {
 
     .sp_scroll img {
         width: 10px;
+    }
+
+    .sp_text {
+        display: initial;
+        text-align: center;
+        font-size: 12px;
     }
 
     .aboutme_desc {

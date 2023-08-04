@@ -78,6 +78,13 @@ img {
     background-color: #ffffeb;
     text-align: center;
     color: #fff;
+    opacity: 1;
+    visibility: visible;
+}
+
+#loading.is-active {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* Loading画像中央配置　*/
@@ -86,14 +93,10 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-/* Loading アイコンの大きさ設定　*/
-#loading_logo img {
     width: 100px;
 }
 
-@keyframes loading_iconAnime {
+@keyframes loading_logoAnime {
     from {
         opacity: 0;
         transform: translateY(100px);
@@ -108,10 +111,9 @@ img {
 /* 秒針 */
 #hari {
     animation: rotation-s 2s linear infinite;
-
     position: absolute;
-    right: calc(50%); /* 位置調整 線幅の半分ずらす */
-    top: calc(50% - -38px); /* 位置調整 線幅の半分ずらす */
+    right: calc(50%);
+    top: calc(50% - -38px);
     transform-origin: 100% top;
     width: 60px;
 }
@@ -127,6 +129,11 @@ img {
     50% {
         transform: rotate(180deg);
     }
+}
+
+.loading-animation.is-active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* ここからメニューバー */
@@ -407,7 +414,7 @@ nav {
     }
 
     .page_top {
-        width: 30px;
+        width: 50px;
         bottom: 165px;
         right: 5%;
     }
