@@ -267,18 +267,7 @@ h3 {
         justify-content: center;
     }
 
-    .about_photo_wrap .mask :active {
-        width: 100%;
-        height: 100%;
-        position: absolute; /* 絶対位置指定 */
-        top: 0;
-        left: 0;
-        opacity: 0; /* マスクを表示しない */
-        background-color: rgb(95, 95, 82, 0.95); /* マスクは半透明 */
-        transition: all 0.2s ease;
-    }
-
-    .about_photo_wrap:active .mask {
+    .about_photo_wrap:active.mask {
         opacity: 1; /* マスクを表示する */
     }
 }
