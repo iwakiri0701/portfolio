@@ -5,7 +5,6 @@ input[type="date"] {
     appearance: none; /* ブラウザのデフォルトスタイルを無効化 */
     -webkit-appearance: none;
     -moz-appearance: none;
-    font-size: 16px;
 }
 
 .contact2_logo {
@@ -125,8 +124,13 @@ textarea {
         input {
             width: 70%;
         }
+
         label {
             padding-left: 10%;
+        }
+
+        input[type="date"] {
+            width: 70%;
         }
 
         textarea {
