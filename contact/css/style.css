@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-/* PCとスマートフォンでの<input type="date"/>のスタイルをリセット */
-input[type="date"] {
-    appearance: none; /* ブラウザのデフォルトスタイルを無効化 */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
 .contact2_logo {
     position: absolute;
     top: -10px;
@@ -127,10 +120,6 @@ textarea {
 
         label {
             padding-left: 10%;
-        }
-
-        input[type="date"] {
-            width: 70%;
         }
 
         textarea {
