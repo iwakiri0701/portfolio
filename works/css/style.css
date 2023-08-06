@@ -264,16 +264,6 @@ h3 span {
 }
 
 @media screen and (max-width: 767px) {
-    .banner_design {
-        top: -17px;
-        width: 160px;
-    }
-
-    .website_design {
-        top: -17px;
-        width: 160px;
-    }
-
     .worksite_desc {
         position: inherit;
         margin: 10%;
