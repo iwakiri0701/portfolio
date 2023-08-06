@@ -165,18 +165,18 @@ h3 {
 }
 
 /* banner_design */
-.banner_design img {
+.banner_design {
     position: absolute;
-    top: 6px;
+    top: -14px;
     left: 50%;
     transform: translate(-50%);
     width: 265px;
 }
 
 /* design */
-.design img {
+.design {
     position: absolute;
-    top: 7px;
+    top: -14px;
     left: 50%;
     transform: translate(-50%);
     width: 117px;
@@ -184,9 +184,9 @@ h3 {
 
 /* worksitem_content */
 
-.website_design img {
+.website_design {
     position: absolute;
-    top: 6px;
+    top: -14px;
     left: 50%;
     transform: translate(-50%);
     width: 265px;
