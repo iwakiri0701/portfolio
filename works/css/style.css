@@ -10,9 +10,10 @@ h3 {
     position: absolute;
     top: -21px;
     left: 50%;
-    transform: translate(-50%);
-    width: 30%;
-    max-width: 114px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 114px;
 }
 
 .works_content {
@@ -170,6 +171,8 @@ h3 {
     top: 6px;
     left: 50%;
     transform: translate(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     width: 30%;
     max-width: 265px;
 }
@@ -180,6 +183,8 @@ h3 {
     top: 7px;
     left: 50%;
     transform: translate(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     width: 30%;
     max-width: 117px;
 }
@@ -191,6 +196,8 @@ h3 {
     top: 6px;
     left: 50%;
     transform: translate(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     width: 30%;
     max-width: 265px;
 }

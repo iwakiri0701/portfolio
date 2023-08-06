@@ -149,9 +149,9 @@ h3 {
     }
 
     .sp_text {
-        display: initial;
+        display: block;
         text-align: center;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .aboutme_desc {
@@ -212,11 +212,10 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
 }
 
 .about_photo {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 1000px;
     margin-top: 200px;
     justify-content: space-around;
@@ -265,9 +264,5 @@ h3 {
 @media screen and (max-width: 767px) {
     .aboutme_photo {
         justify-content: center;
-    }
-
-    .about_photo_wrap:active.mask {
-        opacity: 1; /* マスクを表示する */
     }
 }
