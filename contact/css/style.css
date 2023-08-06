@@ -2,12 +2,10 @@
 
 .contact2_logo {
     position: absolute;
-    top: -10px;
+    top: -5px;
     left: 50%;
     transform: translate(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    width: 140px;
+    width: 114px;
 }
 
 .form_wrap {
