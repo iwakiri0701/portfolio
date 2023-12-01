@@ -307,15 +307,23 @@ header {
 }
 
 .works_wrap .caption {
-    font-size: 60%;
-    padding-top: 15%;
     text-align: center;
     margin: 0 auto;
     color: #a4a88d;
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60%;
 }
 
 .works_wrap h3 {
     font-family: "fot-cezanne-pron", sans-serif;
+}
+
+.works_wrap p {
+    margin: 0;
 }
 
 .works_wrap .mask {
@@ -346,6 +354,7 @@ header {
 
     .works_wrap .caption {
         width: 100%;
+        font-size: 80%;
     }
 }
 
