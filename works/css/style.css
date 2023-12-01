@@ -295,10 +295,6 @@ h3 span {
         padding-left: 10px;
     }
 
-    .br-sp {
-        display: initial;
-    }
-
     .worksitem_content_desc p {
         font-size: 12px;
     }
@@ -379,17 +375,6 @@ h3 span {
     .url {
         text-align: center;
         max-width: none;
-    }
-}
-
-/* works2.6 */
-.sp-br {
-    display: none;
-}
-
-@media screen and (max-width: 767px) {
-    .sp-br {
-        display: block;
     }
 }
 
