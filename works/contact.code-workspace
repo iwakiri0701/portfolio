@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../contact"
+		},
+		{
+			"path": "../css"
+		},
+		{
+			"path": "../images"
+		},
+		{
+			"path": "../js"
+		},
+		{
+			"path": "../thanks"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../about"
+		}
+	]
+}
