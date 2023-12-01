@@ -266,10 +266,6 @@ h3 span {
     margin-top: 80px;
 }
 
-.br-sp {
-    display: none;
-}
-
 @media screen and (max-width: 767px) {
     .worksite_desc {
         position: inherit;
